@@ -1,120 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Engineer Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --text-main: #c9d1d9;
-            --text-muted: #8b949e;
-            --accent: #58a6ff;
-            --border-color: #30363d;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-        header {
-            margin-bottom: 3rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 2rem;
-        }
-        h1 { margin: 0 0 0.5rem 0; color: #fff; }
-        h2 { color: #fff; margin-top: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;}
-        .subtitle { color: var(--accent); font-weight: 600; font-size: 1.2rem; margin: 0 0 1rem 0; }
-        .links a { color: var(--accent); text-decoration: none; margin-right: 1.5rem; font-weight: 500; }
-        .links a:hover { text-decoration: underline; }
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
-        .skill-card { background: var(--card-bg); border: 1px solid var(--border-color); padding: 1rem; border-radius: 6px; }
-        .skill-card h3 { margin: 0 0 0.5rem 0; color: var(--accent); font-size: 1rem; }
-        .project-card { background: var(--card-bg); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 6px; margin-bottom: 1rem; }
-        .project-card h3 { margin: 0 0 0.5rem 0; color: #fff; }
-        .badge { background: #21262d; border: 1px solid var(--border-color); color: var(--text-muted); padding: 0.2rem 0.5rem; border-radius: 2rem; font-size: 0.8rem; margin-right: 0.3rem; display: inline-block; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diego Gondar - DevOps Engineer</title>
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+      --border-color: #30363d;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 2rem;
+    }
+    h1 { margin: 0 0 0.5rem 0; color: #fff; }
+    h2 { color: #fff; margin-top: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;}
+    .subtitle { color: var(--accent); font-weight: 600; font-size: 1.2rem; margin: 0 0 1rem 0; }
+    .links a { color: var(--accent); text-decoration: none; margin-right: 1.5rem; font-weight: 500; }
+    .links a:hover { text-decoration: underline; }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    .skill-card, .project-card { background: var(--card-bg); border: 1px solid var(--border-color); padding: 1rem; border-radius: 6px; }
+    .skill-card h3 { margin: 0 0 0.5rem 0; color: var(--accent); font-size: 1rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin-bottom: 0.5rem; }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Diego Gondar</h1>
+      <p class="subtitle">DevOps & Cloud Engineer</p>
+      <p>Responsible and proactive DevOps Engineer with strong ability to learn quickly and adapt to evolving technological environments. Recognized for organization, attention to detail, and clear communication, combined with a collaborative mindset and strong work ethic.</p>
+      <div class="links">
+        <a href="mailto:die.e.gondar@gmail.com">📧 Email</a>
+        <a href="tel:+540223154489355">📱 Phone</a>
+        <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com" target="_blank">🔗 GitHub</a>
+      </div>
+    </header>
 
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <h1>Your Name</h1>
-            <p class="subtitle">DevOps & Cloud Engineer</p>
-            <p>Passionate about automating infrastructure, building resilient CI/CD pipelines, and managing scalable cloud architectures.</p>
-            <div class="links">
-                <a href="https://github.com" target="_blank">🔗 GitHub</a>
-                <a href="https://linkedin.com" target="_blank">💼 LinkedIn</a>
-                <a href="mailto:your.email@example.com">📧 Email</a>
-            </div>
-        </header>
+    <!-- Technical Skills -->
+    <section>
+      <h2>🛠️ Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Cloud & Infrastructure</h3>
+          <p>Azure (VMs, Storage, VNets, SQL DB, Key Vault, App Service, Functions)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform, Bicep, ARM Templates</p>
+        </div>
+        <div class="skill-card">
+          <h3>CI/CD</h3>
+          <p>Azure DevOps (YAML, multistage), Git</p>
+        </div>
+        <div class="skill-card">
+          <h3>Containers & Orchestration</h3>
+          <p>Docker, AKS, Helm, Ingress</p>
+        </div>
+        <div class="skill-card">
+          <h3>Automation & Scripting</h3>
+          <p>Bash, PowerShell, Azure CLI</p>
+        </div>
+        <div class="skill-card">
+          <h3>Security</h3>
+          <p>IAM, Managed Identities, Azure Policies</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Core Skills Section -->
-        <section>
-            <h2>🛠️ Core Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Cloud Platforms</h3>
-                    <p style="margin:0; color: var(--text-muted);">AWS, Azure, GCP</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Infrastructure as Code</h3>
-                    <p style="margin:0; color: var(--text-muted);">Terraform, Ansible</p>
-                </div>
-                <div class="skill-card">
-                    <h3>CI/CD & Automation</h3>
-                    <p style="margin:0; color: var(--text-muted);">GitHub Actions, Jenkins</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Containers & Orchestration</h3>
-                    <p style="margin:0; color: var(--text-muted);">Docker, Kubernetes</p>
-                </div>
-            </div>
-        </section>
+    <!-- Work Experience -->
+    <section>
+      <h2>💼 Work Experience</h2>
+      <div class="project-card">
+        <h3>DevOps Engineer - INSPYR Solutions</h3>
+        <p><em>Sep 2022 - Jun 2026 | Remote</em></p>
+        <ul>
+          <li>Implemented and maintained CI/CD pipelines in Azure DevOps (YAML, Classic, multistage).</li>
+          <li>Managed infrastructure with Terraform, Bicep, ARM Templates.</li>
+          <li>Automated deployments and operational tasks using PowerShell, Bash, and Azure CLI.</li>
+          <li>Administered Azure resources: VMs, Storage, VNets, Load Balancer, Key Vault.</li>
+          <li>Collaborated with development teams to optimize delivery processes.</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h3>Computer Technician - Freelance</h3>
+        <p><em>2012 - 2022 | Mar del Plata</em></p>
+        <ul>
+          <li>Hardware and software repair and maintenance.</li>
+          <li>Technical support for individuals and businesses.</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <h3>IT Technician / Administrative Assistant - Sociedad de Fomento "Coronel Dorrego"</h3>
+        <p><em>Mar 2014 - Jul 2015 | Mar del Plata</em></p>
+        <ul>
+          <li>Hardware and software repair and maintenance.</li>
+          <li>Technical support and data entry.</li>
+        </ul>
+      </div>
+    </section>
 
-        <!-- Featured Projects Section -->
-        <section>
-            <h2>🚀 Featured Projects</h2>
-            
-            <div class="project-card">
-                <h3>Multi-Environment AWS Infrastructure via Terraform</h3>
-                <p>Designed and deployed a highly-available, VPC-isolated AWS infrastructure architecture spanning staging and production environments using Terraform modules.</p>
-                <div style="margin-bottom: 1rem;">
-                    <span class="badge">AWS</span><span class="badge">Terraform</span><span class="badge">VPC</span>
-                </div>
-                <div class="links"><a href="#" target="_blank">View Repository →</a></div>
-            </div>
+    <!-- Education -->
+    <section>
+      <h2>🎓 Education</h2>
+      <p><strong>Technical Degree in Computer Science</strong><br>Escuela Técnica Nº 5 "Amancio Williams", Mar del Plata - 2011</p>
+    </section>
 
-            <div class="project-card">
-                <h3>GitOps-Driven Kubernetes CI/CD Pipeline</h3>
-                <p>Automated application deployments to an EKS cluster using GitHub Actions for continuous integration and ArgoCD for GitOps-based continuous delivery.</p>
-                <div style="margin-bottom: 1rem;">
-                    <span class="badge">Kubernetes</span><span class="badge">ArgoCD</span><span class="badge">GitHub Actions</span>
-                </div>
-                <div class="links"><a href="#" target="_blank">View Repository →</a></div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section>
-            <h2>📜 Certifications</h2>
-            <ul>
-                <li><strong>AWS Certified Solutions Architect – Associate</strong></li>
-                <li><strong>HashiCorp Certified: Terraform Associate</strong></li>
-                <li><strong>Certified Kubernetes Administrator (CKA)</strong></li>
-            </ul>
-        </section>
-    </div>
-
+    <!-- Languages -->
+    <section>
+      <h2>🌐 Languages</h2>
+      <ul>
+        <li>Spanish (native)</li>
+        <li>English (C1 - advanced)</li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
