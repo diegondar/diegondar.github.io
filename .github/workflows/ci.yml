@@ -21,3 +21,18 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Send notification email
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.gitmail }}
+          password: ${{ secrets.gitpass }}
+          subject: "PR Test Results - Success"
+          to: die.e.gondar@gmail.com
+          from: "GitHub Actions <no-reply@github.com>"
+          body: |
+            CI pipeline finished successfully.
+            All tests passed ✅
